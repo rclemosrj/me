@@ -6,9 +6,9 @@ const { Nuvemshop } = require('@nuvemshop/shop-client');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const CLIENT_ID = 'seu_client_id';
-const CLIENT_SECRET = 'seu_client_secret';
-const NUVEBSHOP_TOKEN = 'seu_token_nuvemshop';
+const CLIENT_ID = '6564';
+const CLIENT_SECRET = '21efa0e3fe02a9bf96193891e90fc25c2134470a763fdbf3';
+const NUVEBSHOP_TOKEN = 'ff0cf3ebca7b4cf09a306a3f95a51a8e95890ead';
 
 const nuvemshop = new Nuvemshop({
   clientId: CLIENT_ID,
