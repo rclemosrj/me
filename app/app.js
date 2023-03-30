@@ -16,12 +16,15 @@ const nuvemshop = new Nuvemshop({
   accessToken: NUVEBSHOP_TOKEN,
 });
 
-app.get('/admin', async (req, res) => {
-  const message = 'Olá mundo!';
-  const shopData = await nuvemshop.shop.get();
+app.get(
+  'https://candela60.lojavirtualnuvem.com.br/admin/',
+  async (req, res) => {
+    const message = 'Olá mundo!';
+    const shopData = await nuvemshop.shop.get();
 
-  res.send(`Olá, ${shopData.name}! ${message}`);
-});
+    res.send(`Olá, ${shopData.name}! ${message}`);
+  }
+);
 
 app.listen(3000, () => {
   console.log('App listening on port 3000!');
