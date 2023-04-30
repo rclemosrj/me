@@ -55,7 +55,8 @@ h1.mobile { display: none }
   z-index: 9;
   margin-left: 5rem;
   margin-right: 0.5rem;
-  color:#ffffff
+  color:#ffffff;
+  padding-left: 30%;
 }
 .switch-light, .switch-dark {
   position: absolute;
@@ -94,7 +95,6 @@ button {
   background: none;
 }
 #main {
-  border: 1px dotted black;
   display: flex;
   align-items: center; /* Vertical align the elements to the center */
 }
