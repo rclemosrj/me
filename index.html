@@ -28,6 +28,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Dark and Light Mode on Switch Click -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -40,6 +43,21 @@
       <h1 class="mobile"><a href="index.html">RCLemos</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!--<a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <button class="switch" id="switch">
+        <i class="switch-light bx bx-sun"></i>
+        <i class="switch-dark bx bx-moon"></i>
+     </button>
+     <script>
+      // Dark and Light Mode on Switch Click
+      document.addEventListener("DOMContentLoaded", () => {
+        const darkSwitch = document.getElementById("switch");
+
+        darkSwitch.addEventListener("click", () => {
+            document.documentElement.classList.toggle("darkmode");
+            document.body.classList.toggle("darkmode");
+        });
+      });
+     </script>
 
       <h2>I'm a passionate <span>graphic designer</span> from New York</h2>
 

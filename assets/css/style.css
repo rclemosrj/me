@@ -43,6 +43,46 @@ h1.mobile { display: none }
     h1.desktop { display: none }
 }
 
+/*Dark and Light Mode on Switch Click*/
+.switch {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 9;
+  margin-left: 5rem;
+  margin-right: 0.5rem;
+}
+.switch-light, .switch-dark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in;
+}
+.switch-light {
+  font-size: 1.45rem;
+  visibility: visible;
+  color: var(--color-black-300);
+}
+.darkmode .switch-light {
+  font-size: 0rem;
+  visibility: hidden;
+}
+.switch-dark {
+  font-size: 0rem;
+  visibility: hidden;
+  color: var(--color-white-100);
+}
+.darkmode .switch-dark {
+  font-size: 1.45rem;
+  visibility: visible;
+}
+
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
