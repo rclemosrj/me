@@ -82,6 +82,17 @@ h1.mobile { display: none }
   font-size: 1.45rem;
   visibility: visible;
 }
+button {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
 
 @media (min-width: 1024px) {
   body::before {
