@@ -10,11 +10,12 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  //font-family: "Open Sans", sans-serif;
+  font-family: Ubuntu, "times new roman", times, roman, serif;
   background-color: #171717;
   color: #fff;
   position: relative;
-  background: transparent;
+  //background: transparent;
 }
 
 body::before {
@@ -27,6 +28,13 @@ body::before {
   top: 0;
   height: 100vh;
   z-index: -1;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://example.com/fonts/ubuntu.woff) format('woff');
 }
 
 @media (min-width: 1024px) {
