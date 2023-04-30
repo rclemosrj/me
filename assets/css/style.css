@@ -37,12 +37,6 @@ body::before {
   src: local('Ubuntu'), url(http://example.com/fonts/ubuntu.woff) format('woff');
 }
 
-h1.mobile { display: none }
-@media (max-width: 1399px) {
-    h1.mobile { display: block }
-    h1.desktop { display: none }
-}
-
 /*Dark and Light Mode on Switch Click*/
 .switch {
   position: relative;
