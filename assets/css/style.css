@@ -237,7 +237,7 @@ h6 {
 
 #header.header-top .navbar {
   margin: 0;
-  argin-left: auto;
+  margin-left: auto;
 }
 
 @media (max-width: 768px) {
